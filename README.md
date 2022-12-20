@@ -1,7 +1,7 @@
-# 
+# Book Managing System
 
 # Description
-Flatiron Movie Theater is open for business! You will be building out an application, Flatdango, that allows a user to purchase movie tickets from the theater.
+ Building out an application, Book management system, that allows a user to search for books.
 
 # PROJECT SET UP
 Install npm by using the command npm install to have all the dependencies needed to run the project .
