@@ -1,6 +1,7 @@
 {
   "books": [
     {
+      "id": 1,
       "name": "Book 1",
       "serial_number": "ISBN0001",
       "author": "James Sports",
@@ -8,17 +9,75 @@
       "is_favourite": false
     },
     {
+      "id": 2,
       "name": "Book 2",
       "serial_number": "ISBN0002",
       "author": "James Sports2",
       "description": "What the book is about2",
-      "is_favourite": false
+      "is_favourite": true
     },
     {
+      "id": 3,
       "name": "Book 3",
       "serial_number": "ISBN0003",
       "author": "James Sports3",
       "description": "What the book is about3",
+      "is_favourite": true
+    },
+    {
+      "id": 4,
+      "name": "book4",
+      "serial_number": "book4",
+      "author": "book4",
+      "description": "book4",
+      "is_favourite": false
+    },
+    {
+      "id": 5,
+      "name": "book4",
+      "serial_number": "book4",
+      "author": "book4",
+      "description": "book4",
+      "is_favourite": false
+    },
+    {
+      "id": 6,
+      "name": "sdkjfbiaj",
+      "serial_number": "hbdhwifb",
+      "author": "jbdsaifb",
+      "description": "jhbidsf",
+      "is_favourite": false
+    },
+    {
+      "id": 7,
+      "name": "kjadnfj",
+      "serial_number": "kbhjdksbf",
+      "author": "bhjdfb",
+      "description": "lknsdf",
+      "is_favourite": false
+    },
+    {
+      "id": 8,
+      "name": "Book nimecreate",
+      "serial_number": "Mr prof Omodho",
+      "author": "0932839199",
+      "description": "Book noma about vitu kali sana msee",
+      "is_favourite": false
+    },
+    {
+      "id": 9,
+      "name": "alsd",
+      "serial_number": "dsf",
+      "author": "dsfd",
+      "description": "dsf",
+      "is_favourite": false
+    },
+    {
+      "id": 10,
+      "name": "Book 5",
+      "serial_number": "Paulo Mancini",
+      "author": "IBN000069",
+      "description": "Test book",
       "is_favourite": false
     }
   ]
