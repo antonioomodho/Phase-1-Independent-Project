@@ -40,7 +40,7 @@
             </label>
         </div>
         <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-        <p class="mt-5 mb-3 text-muted">© 2017-2018</p>
+        <p class="mt-5 mb-3 text-muted">© 2022</p>
     </form>
 </div>
 <div id="register">register</div>
@@ -57,10 +57,10 @@
                     <li class="nav-item active" id="all_books">
                         <a class="nav-link" href="#">All Books <span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item" id="favourite">
                         <a class="nav-link" href="#">Favourite Books</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item" id="create">
                         <a class="nav-link" href="#">Create New Book</a>
                     </li>
                 </ul>
@@ -74,7 +74,9 @@
 
         <div id="all_books_div">No Books to show</div>
         <div id="favourite_div">favourite</div>
-        <div id="create_div">create</div>
+        <div id="create_div">
+            <input >
+        </div>
 
     </main>
 
@@ -121,6 +123,23 @@
             .catch(e=>console.error(e))
     }
 
+    function load_favourite_books(){
+        fetch(base_url)
+            .then(res=>res.json())
+            .then(res=> {
+                let html = "";
+                for (let i=0;i<res.length;i++){
+                    if (res[i].is_favourite) {
+                        html += "<li>" + res[i].name + "</li>"
+                    }
+                }
+
+                document.getElementById("favourite_div").innerHTML = html
+
+            })
+            .catch(e=>console.error(e))
+    }
+
 
 
     function show_all_books_page(){
@@ -132,10 +151,17 @@
 
     function show_favourite_books(){
 
-        document.getElementById("all_books_div").style.display = "block";
-        document.getElementById("favourite_div").style.display = "none";
+        document.getElementById("all_books_div").style.display = "none";
+        document.getElementById("favourite_div").style.display = "block";
         document.getElementById("create_div").style.display = "none";
-        load_all_books();
+        load_favourite_books();
+    }
+
+    function show_create(){
+
+        document.getElementById("all_books_div").style.display = "none";
+        document.getElementById("favourite_div").style.display = "none";
+        document.getElementById("create_div").style.display = "block";
     }
 
     document.getElementById("form-signin").addEventListener("click",function (e){
@@ -143,6 +169,22 @@
         e.preventDefault()
         login()
     })
+
+    document.getElementById("all_books").addEventListener("click",function (e){
+
+        show_all_books_page()
+    })
+
+    document.getElementById("favourite").addEventListener("click",function (e){
+
+        show_favourite_books()
+    })
+    document.getElementById("create").addEventListener("click",function (e){
+
+        show_create()
+    })
+
+
 
 
 
