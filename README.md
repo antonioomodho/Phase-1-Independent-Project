@@ -1,7 +1,7 @@
 # Book Managing System
 
 # Description
- Building out an application, Book management system, that allows a user to search for books.
+ Building out an application, Book management system, that allows a user to login,search for books, get favorite books.
 
 # PROJECT SET UP
 Install npm by using the command npm install to have all the dependencies needed to run the project .
