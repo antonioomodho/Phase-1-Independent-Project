@@ -1,0 +1,25 @@
+{
+  "books": [
+    {
+      "name": "Book 1",
+      "serial_number": "ISBN0001",
+      "author": "James Sports",
+      "description": "What the book is about",
+      "is_favourite": false
+    },
+    {
+      "name": "Book 2",
+      "serial_number": "ISBN0002",
+      "author": "James Sports2",
+      "description": "What the book is about2",
+      "is_favourite": false
+    },
+    {
+      "name": "Book 3",
+      "serial_number": "ISBN0003",
+      "author": "James Sports3",
+      "description": "What the book is about3",
+      "is_favourite": false
+    }
+  ]
+}
