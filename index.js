@@ -1,6 +1,6 @@
 
 
-    const base_url = "https://antonioomodho.github.io/Phase-1-Independent-Project/data.json/books"
+    const base_url = "https://antonioomodho.github.io/Phase-1-Independent-Project/data.json/"
     //const base_url = "http://localhost:3000/books"
     //on load show login page
     function on_load(){
@@ -34,7 +34,7 @@
         .then(res=>res.json())
         .then(res=> {
 
-            document.getElementById("all_books_div").innerHTML = generateIterateBookHtml(res)
+            document.getElementById("all_books_div").innerHTML = generateIterateBookHtml(res['books'])
 
         })
         .catch(e=>console.error(e))
@@ -55,7 +55,7 @@
         .then(res=>res.json())
         .then(res=> {
 
-            const books_ = res.filter((book)=>{
+            const books_ = res['books'].filter((book)=>{
                 return book.is_favourite;
             })
 
