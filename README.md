@@ -22,6 +22,9 @@ Open html file on the browser to view project
 - index.html -  to view project in the browser.
 - index.js -the code that runs the files
 - index.css - styling html
+# Live Link to Project
+https://antonioomodho.github.io/Phase-1-Independent-Project/
+
 # Authors
 
 - [@antonioomodho](https://www.github.com/antonioomodho)
